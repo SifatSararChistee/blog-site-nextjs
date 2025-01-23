@@ -9,7 +9,7 @@ const page = async () => {
   return (
     <div className="mx-auto container w-11/12">
       <h1 className="text-2xl font-bold text-center my-8">Blogs</h1>
-      <div className="grid grid-cols-3 gap-5">
+      <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
         {data.slice(0, 12).map((post) => (
           <PostCard
             key={post.id}
